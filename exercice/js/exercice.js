@@ -58,13 +58,18 @@
 
                                                                                                                     // --- FONCTIONS --- \\
 
+/*  Différents types de fonctions :
+1 - une fonction avec au moins un paramètre sans valeur de retour
+2 - une fonction avec au moins un paramètre avec une valeur de retour
+3 - une fonction sans paramètres avec une valeur de retour
+4 - une fonction sans paramètres et sans une valeur de retour */
 
    // --- parenthèses = fonction --- \\  // --- ce qui est dans les parenthèses sont des paramètres --- \\
 
 
-                                                                                                                       // --- EXERCICES --- \\
+                                                                                                                    // --- EXERCICES --- \\
 
 var prenom = prompt ("Narcis");
-alert (prenom)
+alert (prenom);
 console.log (prenom);
-document.write (prenom)
+document.write (prenom);
