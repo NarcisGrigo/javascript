@@ -69,7 +69,20 @@
 
                                                                                                                     // --- EXERCICES --- \\
 
-var prenom = prompt ("Narcis");
-alert (prenom);
-console.log (prenom);
-document.write (prenom);
+// var prenom = prompt ("Narcis");
+// alert (prenom);
+// console.log (prenom);
+// document.write (prenom);
+
+                                                                    //////////////////////////////////////////////////////////////////////////
+
+var nb1 = prompt  ("Sasir un entier dans le formulaire");
+console.log(nb1);
+var nb2 = 7;
+console.log(nb2);
+var resultat = nb1 % nb2;
+resultat = resultat.toString ();
+console.log(resultat);
+console.log(typeof resultat);
+alert(resultat);
+document.write(resultat);
