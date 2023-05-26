@@ -86,22 +86,61 @@
 // 8.	Affichage du résultat sur la console
 // 9.	Affichage du résultat à partir d’une boîte de dialogue
 // 10.	Additionner (‘nb3’ ou ‘resultat’) avec nb2 et stocker le dans (‘nb3’ ou ‘resultat’)
-// 11.
 
-                                                                   //////////////////////////////////////////////////////////////////////////
+                                                                                                                    // --- EXERCICES --- \\
 
-var nb1 = prompt  ("Sasir un entier dans le formulaire");
-console.log(nb1);
-nb1 = parseInt(nb1);
-console.log(typeof nb1);
-var nb2 = 7;
-console.log(nb2);
-console.log(typeof nb2);
-var resultat = nb1 % nb2;
+// var nb1 = prompt  ("Sasir un entier dans le formulaire");
+// console.log(nb1);
+// nb1 = parseInt(nb1);
+// console.log(typeof nb1);
+// var nb2 = 7;
+// console.log(nb2);
+// console.log(typeof nb2);
+// var resultat = nb1 % nb2;
 // resultat = resultat.toString ();
 // console.log(resultat);
 // console.log(typeof resultat);
-alert(resultat);
-document.write(resultat + " ");
-resultat += nb2;
-document.write(resultat);
+// alert(resultat);
+// document.write(resultat + " ");
+// resultat += nb2;
+// document.write(resultat); 16
+
+                                                                                                                    // --- FONCTIONS --- \\
+
+// if (true) {
+  /* par défaut la condition à vérifier le IF vérifie si elle est vraie */
+  /* ... code ... */
+// }
+
+// var nb1 = 10;
+// if (nb1 < 50) {
+//   console.log("nb1 est bien inférieur à 50");
+// }
+
+// if (true) {
+  /* ... code si VRAI ... */
+// } else {
+  /* ... code si FAUX ... */
+// }
+//-- elese if = si "if" n'est pas true et que "else if" est true -- \\
+
+// var nb1 = 10;
+// if (nb1 > 50) {
+//   console.log("nb1 est bien supérieur à 50");
+// } else {
+//   console.log("nb1 n'est pas supérieur à 50");
+//}
+
+
+// var nb1 = 10;
+// if (nb1 > 50) {
+//   console.log("nb1 est bien supérieur à 50");
+// } else if (nb1 == 50) {
+//    console.log("Je suis dans else if")
+// } else {
+//   console.log("Je suis dans else");  -- sinon, si "if" n'est pas true et que "else if " n'est pas true non plus -- \\
+// }
+// console.log ("Je suis sortie de la condition"); -- dans tous les cas js va executer l'(es)opération(s) suivante(s) -- \\
+
+                                                                                                                    // --- EXERCICES --- \\
+
