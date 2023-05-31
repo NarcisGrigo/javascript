@@ -13,8 +13,8 @@ LES BOUCLES
 2. la condition à vérifier qui doit donc être VRAIE (TRUE)
 3. le 'pas' d'incrémentation (combien j'ajoute à chaque tour, généralement 1 donc i++)
 */
-for (var i = 1; i <= 10 ; i+=2) {
-    document.write("<p>Instruction exécutée : " + i + "</p>");
+for (var i = 1; i <= 10 ; i += 2) { // on affecte un variable "i" avec une valeur "1" ; on donne un condition a i "i <= 10" ; une addition "i += 2(i=i+2)"
+    document.write("<p>Instruction exécutée : " + i + "</p>"); // si i <= 10 alors il écrit "..." + i + ...
 }
 
 // -- La boucle WHILE (tant que)
@@ -25,7 +25,7 @@ while (j <= 10) {
     /* 50 lignes de code */
     j++;// j = j + 1; OU j += 1;
 }
-
+/* on utilise while pour une seule fonction */
 /* -------------------------------
             EXERCICE
 j'ai 1000€ sur mon compte
