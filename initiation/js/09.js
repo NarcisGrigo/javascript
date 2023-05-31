@@ -4,11 +4,9 @@
 // var arr = [element0, element1, ..., elementN];
 // array = tableau
 var fruits = ['Apple', 'Banana'];
-var prenom = ['Nawal', 'Wassila', 'Rahim', 'Jérémy', 'Narcis', 'Karima', 'FAissal', 'Alin', 'Oliver', 'Cynthia', 'Alexis', 'Michel' , 'Mitra' ];
 console.log(fruits.length);
-console.log(prenom.length);
-// on met " . " pour un objet (console.log (console est un objet))
 // 2
+
 //Accéder(via son index) à un élément du tableau
 var first = fruits[0];
 // Apple
