@@ -144,3 +144,49 @@
 
                                                                                                                     // --- EXERCICES --- \\
 
+// var ht = prompt();
+// resultat = ht;  //prix hors taxes
+// console.log(resultat+ " = prix hors tva");
+// var tva = ht * 0.2;
+// resultat = ht * 0.2; //pris apres tva
+// console.log(resultat + " = prix apres tva");
+// resultat = ht + tva;
+// var ttc = ht + tva;
+// resultat = ht + tva; //prix ttc (tout taux compris)
+// console.log(resultat + " = prix ttc");
+// console.log(typeof ttc);
+
+                                                                                                                    // --- CORRECTION --- \\
+
+// var nb1 = prompt();
+// console.log(typeof nb1);
+// /* isNaN(); --- si n'est pas une valeur numerique */
+// if (isNaN(nb1)) {
+//    document.write("on ne prends pas en compte les string");
+//    console.log('on ne prends pas en compte les string');
+// } else {
+//    var nb2 = 5;
+//    document.write(nb1);
+//    var nb3 = ((nb1 / nb2) + nb1);
+//    console.log(nb3);
+//    document.write("<br>" + "le prix avec tva et " + nb3);
+// }
+
+// var prenom = "Kira ";
+// var unChiffre = 12;
+// if ( isNaN(prenom)) {
+//    console.log(prenom);
+// } else {
+//    console.log(unChiffre);
+// }
+
+var ht = prompt();
+console.log(ht + " = prix hors tva");
+if (isNaN(ht)) {
+   console.log(ht);
+} else {
+   var tva = ht * 0.2;
+   console.log(tva + " = prix apres tva");
+   var ttc = ht + tva;
+   console.log(ttc + " = prix ttc");
+}
