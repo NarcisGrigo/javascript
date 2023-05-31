@@ -188,17 +188,18 @@
 //    var ttc = ht + tva;
 //    console.log(ttc + " = prix ttc");
 // }
-
-var fruits = ['Apple', 'Banana', 'Orange'];
+// ctrl+h = raccourci pour changer un mot avec un autre (fruits2=panier)
 
 //  tableau indexé
+var fruits = ['Apple', 'Banana', 'Orange'];
+console.log(typeof fruits);
 
-var fruits2 = {
+//  tableau associatif (on peut utiliser plusieurs tableaux indexés dans un tableau associatif)
+var panier = {
     0: 'Apple',
     1: 'Banana',
     'troisiemeFruit': 'orange'
 };
-//  tableau associatif
 
 var prenom = ["Nawal","Wassila","Rahim","Jérémy","Narcis","Karima","Faissal","Alin","Oliver","Cynthia","Alexis","Michel","Mitra",
 ];
@@ -206,8 +207,8 @@ console.log(fruits.length);
 // accéder (via son index) à un élément du tableau
 console.log(prenom.length);
 var first = fruits[0];
-var second = fruits[0];
-var third = fruits2['troisiemeFruit'];
+var second = panier[0];
+var third = panier['troisiemeFruit'];
 console.log(second);
 console.log("La valeur du troisième élément : " +
-    third); 
+    third);
