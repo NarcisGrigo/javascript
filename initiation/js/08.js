@@ -13,6 +13,7 @@ LES BOUCLES
 2. la condition à vérifier qui doit donc être VRAIE (TRUE)
 3. le 'pas' d'incrémentation (combien j'ajoute à chaque tour, généralement 1 donc i++)
 */
+// dans for toujours 3 syntaxes
 for (var i = 1; i <= 10 ; i += 2) { // on affecte un variable "i" avec une valeur "1" ; on donne un condition a i "i <= 10" ; une addition "i += 2(i=i+2)"
     document.write("<p>Instruction exécutée : " + i + "</p>"); // si i <= 10 alors il écrit "..." + i + ...
 }
