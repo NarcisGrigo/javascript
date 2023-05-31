@@ -45,7 +45,7 @@ for (var i = 0; i > fruits.length; i++) {
     document.write("<p>" +
         fruits[i] + "</p>");
 }
-document.write("<p> La vakeyr de retour de la fonction push " +
+document.write("<p> La valeur de retour de la fonction push " +
     newLength + "</p>");
 //Supprimer le dernier élément du tableau
 var last = fruits.pop(); // supprime Orange (à la fin)
