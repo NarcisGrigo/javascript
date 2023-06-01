@@ -17,11 +17,11 @@
 // alert ("Mon prénom est : Narcis");
 // window.alert ("Super, tu es arrivé sur mon site !");   // --- window.alert ou alert pour afficher une boite d'alerte --- \\
 //////////////////////////////////////////////////////////////////////////
-// document.write ("A la pause vous aurez des Haribos Pik !");   // --- document.write pour afficher le texte dans la page web --- \\
+// console.log ("A la pause vous aurez des Haribos Pik !");   // --- console.log pour afficher le texte dans la page web --- \\
 //////////////////////////////////////////////////////////////////////////
 // prompt ("Question: on est quel jour ?", "jour de la semaine");   // --- window.prompt ou prompt pour afficher une boite de dialogue ou on peut écrire et afficher nos données --- \\
 //var jour = prompt ();   // --- affiche un formulaire , vide parce-que on a pas donné une valeur --- \\
-//document.write (jour);   // --- affiche le texte stockée dans la variable donnée sur la page web --- \\
+//console.log (jour);   // --- affiche le texte stockée dans la variable donnée sur la page web --- \\
 //////////////////////////////////////////////////////////////////////////
 // var unBooleen = false;
 // console.log (unBooleen);
@@ -31,7 +31,7 @@
 //////////////////////////////////////////////////////////////////////////
 // const PAYS = "France";
 // PAYS = "Italie"   // --- On déclare uneseule fois --- \\
-// document.write (PAYS);
+// console.log (PAYS);
 //////////////////////////////////////////////////////////////////////////
 // var unChiffre = "69.420724";
 // console.log (unChiffre);
@@ -71,7 +71,7 @@
 // var prenom = prompt ("Narcis");
 // alert (prenom);
 // console.log (prenom);
-// document.write (prenom);
+// console.log (prenom);
 
 //////////////////////////////////////////////////////////////////////////
 
@@ -100,9 +100,9 @@
 // console.log(resultat);
 // console.log(typeof resultat);
 // alert(resultat);
-// document.write(resultat + " ");
+// console.log(resultat + " ");
 // resultat += nb2;
-// document.write(resultat); 16
+// console.log(resultat); 16
 
 // --- FONCTIONS --- \\
 
@@ -160,14 +160,14 @@
 // console.log(typeof nb1);
 // /* isNaN(); --- si n'est pas une valeur numerique */
 // if (isNaN(nb1)) {
-//    document.write("on ne prends pas en compte les string");
+//    console.log("on ne prends pas en compte les string");
 //    console.log('on ne prends pas en compte les string');
 // } else {
 //    var nb2 = 5;
-//    document.write(nb1);
+//    console.log(nb1);
 //    var nb3 = ((nb1 / nb2) + nb1);
 //    console.log(nb3);
-//    document.write("<br>" + "le prix avec tva et " + nb3);
+//    console.log("<br>" + "le prix avec tva et " + nb3);
 // }
 
 // var prenom = "Kira ";
@@ -191,24 +191,113 @@
 // ctrl+h = raccourci pour changer un mot avec un autre (fruits2=panier)
 
 //  tableau indexé
-var fruits = ['Apple', 'Banana', 'Orange'];
-console.log(typeof fruits);
+// var fruits = ['Apple', 'Banana', 'Orange'];
+// console.log(typeof fruits);
 
 //  tableau associatif (on peut utiliser plusieurs tableaux indexés dans un tableau associatif)
-var panier = {
-    0: 'Apple',
-    1: 'Banana',
-    'troisiemeFruit': 'orange'
-};
+// var panier = {
+//     0: 'Apple',
+//     1: 'Banana',
+//     'troisiemeFruit': 'orange'
+// };
 
-var prenom = ["Nawal","Wassila","Rahim","Jérémy","Narcis","Karima","Faissal","Alin","Oliver","Cynthia","Alexis","Michel","Mitra",
-];
-console.log(fruits.length);
+// var prenom = ["Nawal","Wassila","Rahim","Jérémy","Narcis","Karima","Faissal","Alin","Oliver","Cynthia","Alexis","Michel","Mitra",
+// ];
+// console.log(fruits.length);
 // accéder (via son index) à un élément du tableau
-console.log(prenom.length);
-var first = fruits[0];
-var second = panier[0];
-var third = panier['troisiemeFruit'];
-console.log(second);
-console.log("La valeur du troisième élément : " +
-    third);
+// console.log(prenom.length);
+// var first = fruits[0];
+// var second = panier[0];
+// var third = panier['troisiemeFruit'];
+// console.log(second);
+// console.log("La valeur du troisième élément : " +
+//     third);
+
+// AU LIEU DE CREER UN NOUVEAU TABLEAU ON MODIFIE LE TABLEAU INITIAL
+// console.log(fruits.length);
+//Ajouter à la fin du tableau
+// la syntaxe suivante fait 2 opérations à la fois(meme temps), (1- Elle éxécute la fonction "push"), (2- Elle récupère la valeur de retour de la fonction "push" dans la variable "newLength")
+// Il faut préciser que la fonction "push" prend un paramètre ou (argument) et cette fonction a une valeur de retour, car on peut affecter cette valeur dans une variable (ici c'est la variable "newLength")
+// var newLength = fruits.push('Orange');
+// ["Apple", "Banana", "Orange"]
+
+// for (var i = 0; i > fruits.length; i++) {
+//   console.log("<p>" + fruits[i] + "</p>");
+// }
+// console.log(
+//   "<p> La valeur de retour de la fonction push " + newLength + "</p>"
+// );
+
+// console.log(fruits);
+// console.log(newLength);
+
+var fruits = ["Apple", "Banana"];
+document.write("Tableau fruits initial : " + fruits);
+//Ajouter à la fin du tableau
+var newLength = fruits.push("Orange", "Citron");
+
+document.write("Tableau fruits ajout des deux éléments : " + fruits);
+document.write(typeof fruits);
+document.write(typeof newLength);
+document.write(newLength);
+
+var lastElement = fruits.pop();
+
+document.write(
+  "Tableau fruits après avoir supprimé le dernier élement : " + fruits
+);
+document.write("La taille finale du tableau : " + fruits.length);
+document.write(typeof lastElement);
+document.write("La valeur du dernier élement supprimé : " + lastElement);
+
+//Supprimer le premier élément du tableau
+var firstElement = fruits.shift(); // supprime Apple (au début)
+// ["Banana"];
+document.write('La valeur du premier élement supprimé : ' + firstElement);
+document.write('Tableau fruits après avoir premier le dernier élement : ' + fruits);
+
+//Ajouter au début du tableau
+var newLength = fruits.unshift("Strawberry", "Cherry"); // ajoute au début
+// ["Strawberry", "Banana"];
+document.write('<p>' + 'Tableau fruits après avoir supprimé le(s) premier(s) élément(s) : ' + fruits + '</p>');
+document.write('<p>' + 'La nouvelle valeur après avoir ajouté le(s) premier(s) élément(s) : ' + newLength + '</p>');
+fruits.push("Mango");
+
+// Créer un tableau
+var pos = fruits.indexOf('Banana');
+// 1
+document.write('<p>' +'Tableau fruits après avoir supprimé le(s) premier(s) élément(s) : ' + fruits + '</p>');
+document.write('<p>' + 'La valeur de retour de la fonction "indexOF"  : ' + pos + '</p>');
+
+//Supprimer un élément par son index
+var removedItem = fruits.splice(pos, 1); // supprime 1 élément à la position pos
+// ["Strawberry", "Mango"]
+document.write('<p>' + 'Tableau fruits après aavoir suprimé le(s) élément(s) par la fonction "splice" : ' + fruits + '</p>');
+document.write('<p>' + 'La valeur de retour de la fonction "indexOf" : ' + removedItem + '</p>');
+// Les valeurs de retour sont les éléments supprimés en forme de tableau (array)
+
+//Supprimer des éléments à partir d'un index
+var vegetables = ["Cabbage", "Turnip", "Radish", "Carrot"];
+console.log(vegetables);
+// ["Cabbage", "Turnip", "Radish", "Carrot"]
+
+var pos = 1,
+  n = 2;
+var removedItems = vegetables.splice(pos, n);
+// n définit le nombre d'éléments à supprimer à partir de la position pos
+console.log(vegetables);
+// ["Cabbage", "Carrot"] (le tableau d'origine est changé)
+console.log(removedItems);
+// ["Turnip", "Radish"] (splice retourne la liste des éléments supprimés)
+
+//Copier un tableau
+var shallowCopy = fruits.slice(); // crée un nouveau tableau qui contient les éléments de fruits
+// ["Strawberry", "Mango"]
+var fruits2 = fruits;
+document.write('<p>' + 'La valeur de retour de la fonction "slice" : ' + shallowCopy + 'qui est une copie du tableau "fruits" </p>');
+console.log(shallowCopy);
+
+var newValue = fruits.unshift("Melon", "Pear");
+console.log(fruits);
+console.log(shallowCopy);
+console.log(fruits2);
