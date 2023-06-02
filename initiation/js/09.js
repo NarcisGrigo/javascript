@@ -72,10 +72,18 @@ var first = fruits.shift(); // supprime Apple (au début)
 //Ajouter au début du tableau
 var newLength = fruits.unshift("Strawberry"); // ajoute au début
 // ["Strawberry", "Banana"];
+console.log("<p> Premier newLength : </p>" + newLength);
 
-fruits.push("Mango");
+console.log("<p> Premier Mango : </p>" + fruits.push('Mango'));
+console.log("<p> Premier Mango : </p>" + fruits);
+
+console.log("<p> Deuxième newLength : </p>" + newLength);
+
 // ["Strawberry", "Banana", "Mango"]
+console.log("<p> Premier newLength : </p>" + newLength);
 
+console.log("<p> Premier Mango : </p>" + fruits.push('Mango')); // chaque fois quand on appelle une fonction il l'éxécute (du coup il ajoute encore une fois mango, maintenant on a 2x mango)
+console.log("<p> Premier Mango : </p>" + fruits);
 // Créer un tableau
 //Trouver l'index d'un élément dans le tableau
 var pos = fruits.indexOf("Banana");
@@ -105,3 +113,7 @@ console.log(removedItems);
 //Copier un tableau
 var shallowCopy = fruits.slice(); // crée un nouveau tableau qui contient les éléments de fruits
 // ["Strawberry", "Mango"]
+
+var alerts = alert("param");
+
+console.log(alerts);

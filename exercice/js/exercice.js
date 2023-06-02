@@ -231,73 +231,75 @@
 // console.log(fruits);
 // console.log(newLength);
 
-var fruits = ["Apple", "Banana"];
-document.write("Tableau fruits initial : " + fruits);
-//Ajouter à la fin du tableau
-var newLength = fruits.push("Orange", "Citron");
+/* var fruits = ["Apple", "Banana"];
+document.write("Tableau fruits initial : " + fruits); */
 
-document.write("Tableau fruits ajout des deux éléments : " + fruits);
+/* Ajouter à la fin du tableau
+var newLength = fruits.push("Orange", "Citron"); */
+
+/* document.write("Tableau fruits ajout des deux éléments : " + fruits);
 document.write(typeof fruits);
 document.write(typeof newLength);
-document.write(newLength);
+document.write(newLength); */
 
-var lastElement = fruits.pop();
+/* var lastElement = fruits.pop();
 
 document.write(
   "Tableau fruits après avoir supprimé le dernier élement : " + fruits
 );
 document.write("La taille finale du tableau : " + fruits.length);
 document.write(typeof lastElement);
-document.write("La valeur du dernier élement supprimé : " + lastElement);
+document.write("La valeur du dernier élement supprimé : " + lastElement); */
 
-//Supprimer le premier élément du tableau
-var firstElement = fruits.shift(); // supprime Apple (au début)
+/* Supprimer le premier élément du tableau
+var firstElement = fruits.shift(); // supprime Apple (au début) */
 // ["Banana"];
-document.write('La valeur du premier élement supprimé : ' + firstElement);
-document.write('Tableau fruits après avoir premier le dernier élement : ' + fruits);
+/* document.write('La valeur du premier élement supprimé : ' + firstElement);
+document.write('Tableau fruits après avoir premier le dernier élement : ' + fruits); */
 
-//Ajouter au début du tableau
-var newLength = fruits.unshift("Strawberry", "Cherry"); // ajoute au début
+/* Ajouter au début du tableau
+var newLength = fruits.unshift("Strawberry", "Cherry"); // ajoute au début */
 // ["Strawberry", "Banana"];
-document.write('<p>' + 'Tableau fruits après avoir supprimé le(s) premier(s) élément(s) : ' + fruits + '</p>');
+/* document.write('<p>' + 'Tableau fruits après avoir supprimé le(s) premier(s) élément(s) : ' + fruits + '</p>');
 document.write('<p>' + 'La nouvelle valeur après avoir ajouté le(s) premier(s) élément(s) : ' + newLength + '</p>');
-fruits.push("Mango");
+fruits.push("Mango"); */
 
-// Créer un tableau
-var pos = fruits.indexOf('Banana');
+/* Créer un tableau
+var pos = fruits.indexOf('Banana'); */
 // 1
-document.write('<p>' +'Tableau fruits après avoir supprimé le(s) premier(s) élément(s) : ' + fruits + '</p>');
-document.write('<p>' + 'La valeur de retour de la fonction "indexOF"  : ' + pos + '</p>');
+/* document.write('<p>' +'Tableau fruits après avoir supprimé le(s) premier(s) élément(s) : ' + fruits + '</p>');
+document.write('<p>' + 'La valeur de retour de la fonction "indexOF"  : ' + pos + '</p>'); */
 
-//Supprimer un élément par son index
-var removedItem = fruits.splice(pos, 1); // supprime 1 élément à la position pos
+/* Supprimer un élément par son index
+var removedItem = fruits.splice(pos, 1); // supprime 1 élément à la position pos */
 // ["Strawberry", "Mango"]
-document.write('<p>' + 'Tableau fruits après aavoir suprimé le(s) élément(s) par la fonction "splice" : ' + fruits + '</p>');
-document.write('<p>' + 'La valeur de retour de la fonction "indexOf" : ' + removedItem + '</p>');
+/* document.write('<p>' + 'Tableau fruits après aavoir suprimé le(s) élément(s) par la fonction "splice" : ' + fruits + '</p>');
+document.write('<p>' + 'La valeur de retour de la fonction "indexOf" : ' + removedItem + '</p>'); */
 // Les valeurs de retour sont les éléments supprimés en forme de tableau (array)
 
-//Supprimer des éléments à partir d'un index
+/* Supprimer des éléments à partir d'un index
 var vegetables = ["Cabbage", "Turnip", "Radish", "Carrot"];
-console.log(vegetables);
+console.log(vegetables); */
 // ["Cabbage", "Turnip", "Radish", "Carrot"]
 
-var pos = 1,
+/* var pos = 1,
   n = 2;
 var removedItems = vegetables.splice(pos, n);
-// n définit le nombre d'éléments à supprimer à partir de la position pos
+ n définit le nombre d'éléments à supprimer à partir de la position pos
 console.log(vegetables);
-// ["Cabbage", "Carrot"] (le tableau d'origine est changé)
+ ["Cabbage", "Carrot"] (le tableau d'origine est changé)
 console.log(removedItems);
-// ["Turnip", "Radish"] (splice retourne la liste des éléments supprimés)
+ ["Turnip", "Radish"] (splice retourne la liste des éléments supprimés) */
 
-//Copier un tableau
-var shallowCopy = fruits.slice(); // crée un nouveau tableau qui contient les éléments de fruits
-// ["Strawberry", "Mango"]
-var fruits2 = fruits;
+/* Copier un tableau
+var shallowCopy = fruits.slice(); -- crée un nouveau tableau qui contient les éléments de fruits
+ ["Strawberry", "Mango"] /*
+
+/* var fruits2 = fruits;
 document.write('<p>' + 'La valeur de retour de la fonction "slice" : ' + shallowCopy + 'qui est une copie du tableau "fruits" </p>');
 console.log(shallowCopy);
 
 var newValue = fruits.unshift("Melon", "Pear");
 console.log(fruits);
 console.log(shallowCopy);
-console.log(fruits2);
+console.log(fruits2); */
