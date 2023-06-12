@@ -34,7 +34,7 @@ function additions(num1, num2) {
 }
 
 // quand on execute une fonction qui prend des paramètres, les valeurs données seront stockées dans les paramètres de la fonction en question
-// dans notre exemple les deux valeurs de "2 et 3" seront stockées successivement dans les paramètres "num1 et num2" de la fonction "additions" 
+// dans notre exemple les deux valeurs de "2 et 3" seront stockées successivement dans les paramètres "num1 et num2" de la fonction "additions"
 var res = additions(2, 3);
 
 document.write(res);
