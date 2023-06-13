@@ -27,3 +27,5 @@
 //     alert("Bienvenue, vous êtes majeur. :)");
 //   }
 // }
+
+/* R A N D O M */
