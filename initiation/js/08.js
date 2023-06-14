@@ -29,27 +29,28 @@ while (j <= 10) {
 }
 /* on utilise while pour une seule fonction */
 /* -------------------------------
-            EXERCICE
+            E X E R C I C E
 j'ai 1000€ sur mon compte
 chaque mois j'ajoute 50€
 combien de temps me faut-il pour avoir 2000€ sur mon compte ?
 -------------------------------- */
-var monCompte = 1000;
-var temps = 0;
-while (monCompte < 2000) {
-  monCompte += 50;
-  temps++;
-}
-console.log("<p>" + "<h3>Sous sur mon compte : " + monCompte + "</h3>");
-console.log("<p>" + "<h3>Jusqu'à 2000€, il me faut : " + temps + " mois</h3>");
+// var monCompte = 1000;
+// var temps = 0;
+// while (monCompte < 2000) {
+//   monCompte += 50;
+//   temps++;
+// }
+// console.log("<p>" + "<h3>Sous sur mon compte : " + monCompte + "</h3>");
+// console.log("<p>" + "<h3>Jusqu'à 2000€, il me faut : " + temps + " mois</h3>");
 // console.log('<p>' +"<h3>Jusqu'à 2000€, il me faut : " + (temps/12) + " années</h3>");
 
 // avec une boucle FOR
-var tps = 0;
-for (var mesSous = 1000; mesSous < 2000; mesSous += 50) {
-  console.log("<p>" + "<h3>Le mois suivant j'ai : " + mesSous + "</h3>");
-  tps++;
-}
-console.log("<p>" + "<h3>Il aura fallu " + tps + " mois.</h3>");
+// var tps = 0;
+// for (var mesSous = 1000; mesSous < 2000; mesSous += 50) {
+//   console.log("<p>" + "<h3>Le mois suivant j'ai : " + mesSous + "</h3>");
+//   tps++;
+// }
+// console.log("<p>" + "<h3>Il aura fallu " + tps + " mois.</h3>");
 
-/*FIN*/
+/* F I N */
+
