@@ -1,5 +1,7 @@
 // alert('test');
+
 /* --- L'opérateur d'inégalité stricte ( !== ) vérifie si ses deux opérandes ne sont pas égaux et renvoie un booléen correspondant au résultat --- */
+
 var disMoi = "";
 var i = 1;
 
