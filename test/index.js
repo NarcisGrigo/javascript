@@ -347,14 +347,24 @@ maxMin(2, 5, false) => 2
 
 // on retourne "a" si ("c" == true et "a" > "b") ou ("c" = false et "a" < "b")
 // on retourne "b" si ("c" == true et "a" < "b") ou ("c" = false et "a" > "b")
-function maxMin(a, b, c = true) {
-  if ((c == true && (a > b)) || ((c == false) && (a < b))) {
-    return a;
-  } else if ((c == true && (a < b)) || ((c == false) && (a > b))) {
-    return b;
-  }
-}
-let resultat = maxMin(3, 8, true); // result "a"
-console.log(resultat);
-let result = maxMin(3, 8, false); // result "b"
-console.log(result);
+// function maxMin(a, b, c = true) {
+//   if ((c == true && (a > b)) || ((c == false) && (a < b))) {
+//     return a;
+//   } else if ((c == true && (a < b)) || ((c == false) && (a > b))) {
+//     return b;
+//   }
+// }
+// let resultat = maxMin(3, 8, true); // result "a"
+// console.log(resultat);
+// let result = maxMin(3, 8, false); // result "b"
+// console.log(result);
+
+
+/*
+--- Exercice ---
+ecrire une fonction sommeTab qui prend en paramètre un tableau composé de nombres
+la fonction doit retourner la somme des éléments du tableau
+exemple :
+sommeTab([1, 6, 9]) => 16
+*/
+
