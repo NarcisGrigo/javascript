@@ -361,10 +361,102 @@ maxMin(2, 5, false) => 2
 
 
 /*
---- Exercice ---
-ecrire une fonction sommeTab qui prend en paramètre un tableau composé de nombres
-la fonction doit retourner la somme des éléments du tableau
-exemple :
-sommeTab([1, 6, 9]) => 16
+--- Entrainer ---
 */
 
+// let somme = 0; // la variable "somme" vaut "0" au départ
+
+// for (let i = 1; i <= 100; i++) {
+  // somme = somme + i;
+  // somme += i;
+// }
+// console.log(somme);
+
+/*
+itération 1 :
+somme = 0
+i = 1
+fin itération 1 :
+somme = 1
+i = 2
+*/
+
+/*
+itération 2 :
+somme = 1
+i = 2
+fin itération 2 :
+somme = 3
+i = 3
+*/
+
+/*
+itération 3 :
+somme = 3
+i = 3
+fin itération 3 :
+somme = 6
+i = 4
+*/
+
+/*
+itération 4 :
+somme = 6
+i = 4
+fin itération 4 :
+somme = 10
+i = 5
+*/
+
+/*
+itération 5 :
+somme = 10
+i = 5
+fin itération 5 :
+somme = 15
+i = 6
+*/
+
+
+/*
+--- Entrainer ---
+*/
+
+// let num = 1;
+
+// do {
+//   if (num % 2 === 0) {
+//     console.log(num);
+//   }
+//   num++;
+// } while (num <= 20);
+
+
+/*
+--- Exercice n°2 ---
+ecrire une fonction "sommeTab" qui prend en paramètre un tableau composé de nombres
+la fonction doit retouner la somme des éléments du tableau
+exemple :
+sommeTab = ([1, 6 ,9]) => 16
+*/
+
+function sommeTab(tableau) { // fonction sommeTab prend un paramétre
+  let somme = 0; // initialisation de la variable "somme" à "0"
+  let i = 0; // initialisation de la variable "i" à "0"
+  // "0" correspond a la premiere position du tableau
+  while (i < tableau.length) { // tand que "i" est plus petit que la taille du tableau
+    somme = tableau[i] + somme; // on ajoute la valeur de la position a la position "i" du tableau a la variable "somme"
+    i++; // incrementer "i"
+    // somme += tableau[i];
+  }
+  // a la fin de laboucle on retourne la "somme"
+  return somme;
+}
+
+let tab = [1, 2, 8, 5, 6];
+let resultat2 = sommeTab(tab);
+console.log(resultat2); // => affiche 22
+
+// eviter cette mauvaise maniere
+// let resultat3 = sommeTab([1, 6, 9]); // => affiche 16
+// console.log(resultat3);
