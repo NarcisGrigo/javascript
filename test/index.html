@@ -7,14 +7,46 @@
     <title>Document</title>
   </head>
   <body>
+    <style>
+      .red {
+        color: red;
+      }
+      .blue {
+        color: blue;
+      }
+      .button {
+        padding: 10px;
+        border-radius: 15px;
+        border: solid 2px;
+      }
+    </style>
     <h1>Bonjour</h1>
-    <hr>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. <hr> Magni ullam
-      officia dolorem, <hr> laudantium itaque sunt numquam tempore ex odio non
-      voluptatem adipisci ipsum, <hr> aperiam distinctio vero commodi molestias
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ullam
+      officia dolorem, laudantium itaque sunt numquam tempore ex odio non
+      voluptatem adipisci ipsum, aperiam distinctio vero commodi molestias
       perferendis facere!
     </p>
-    <hr>
+    <div id="container">
+      <h1 class="title">Titre de la page</h1>
+      <p class="content">Contenu de la page</p>
+      <button id="btn">Cliquez ici</button>
+    </div>
+    <script>
+      let t = document.querySelector(".title");
+      t.classList.add("red");
+
+      let p = document.getElementsByClassName("content");
+      p[0].className = "blue";
+
+      let b = document.getElementById("btn");
+      b.className = "button";
+    </script>
   </body>
 </html>
+<!--
+      Sélectioner l'élément <h1> avec la classe "title" et ajoutez luis la classe "red".
+      Sélectionner l'élément <p> avec la classe "content" et remplacez la classe
+      "content" par la classe "blue".
+      Sélectionner l'élément <button> avec l'ID "btn" donnez lui une classe "button"
+     -->

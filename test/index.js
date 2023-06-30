@@ -440,23 +440,278 @@ exemple :
 sommeTab = ([1, 6 ,9]) => 16
 */
 
-function sommeTab(tableau) { // fonction sommeTab prend un paramétre
-  let somme = 0; // initialisation de la variable "somme" à "0"
-  let i = 0; // initialisation de la variable "i" à "0"
+// function sommeTab(tableau) { // fonction sommeTab prend un paramétre
+  // let somme = 0; // initialisation de la variable "somme" à "0"
+  // let i = 0; // initialisation de la variable "i" à "0"
   // "0" correspond a la premiere position du tableau
-  while (i < tableau.length) { // tand que "i" est plus petit que la taille du tableau
-    somme = tableau[i] + somme; // on ajoute la valeur de la position a la position "i" du tableau a la variable "somme"
-    i++; // incrementer "i"
+  // while (i < tableau.length) { // tand que "i" est plus petit que la taille du tableau
+    // somme = tableau[i] + somme; // on ajoute la valeur de la position a la position "i" du tableau a la variable "somme"
+    // i++; // incrementer "i"
     // somme += tableau[i];
-  }
+  // }
   // a la fin de laboucle on retourne la "somme"
-  return somme;
-}
+  // return somme;
+// }
 
-let tab = [1, 2, 8, 5, 6];
-let resultat2 = sommeTab(tab);
-console.log(resultat2); // => affiche 22
+// let tab = [1, 2, 8, 5, 6];
+// let resultat2 = sommeTab(tab);
+// console.log(resultat2); // => affiche 22
 
 // eviter cette mauvaise maniere
 // let resultat3 = sommeTab([1, 6, 9]); // => affiche 16
 // console.log(resultat3);
+
+// function maxTab(tableau) {
+    // let max = tableau[0]; // on considere le premier elemement comme etant le plus grand
+    // for (let i = 0; i < tableau.length; i++){ // pour i allant de 0 a la taille du tableau
+        // comparer max de la valeur a la position i du tableau
+        // if (max < tableau[i]) {  // si max est plus petit
+            // on remplace la valeur de max par la valeur de la position i du tableau
+            // max = tableau[i];
+        // }
+    // }
+    // return max; // retourner max
+// }
+
+
+
+// let tab1 = [5, 8, 3, 0];
+// let resultat3 = maxTab(tab1);
+// console.log(resultat3); // affiche => 8
+
+// function maxTab(tableau) {
+  // let max = tableau[0]; // on considere le premier elemement comme etant le plus grand
+  // for (let i = 0; i < tableau.length; i++) {
+    // pour i allant de 0 a la taille du tableau
+    // comparer max de la valeur a la position i du tableau
+    // if (max < tableau[i]) {
+      // si max est plus petit
+      // on remplace la valeur de max par la valeur de la position i du tableau
+      // max = tableau[i];
+    // }
+  // }
+  // return max; // retourner max
+// }
+
+// function minTab(tableau) {
+  // let min = tableau[0]; // on considere le premier elemement comme etant le plus grand
+  // for (let i = 0; i < tableau.length; i++) {
+    // pour i allant de 0 a la taille du tableau
+    // comparer max de la valeur a la position i du tableau
+    // if (min > tableau[i]) {
+      // si max est plus petit
+      // on remplace la valeur de max par la valeur de la position i du tableau
+      // min = tableau[i];
+    // }
+  // }
+  // return min; // retourner max
+// }
+
+// function maxMinTab(tableau, c) {
+//   if (c == true) {
+//     return maxTab(tableau);
+//   } else {
+//     return minTab(tableau);
+//   }
+// }
+
+// const array = [1, 12, 3, 67, 1, 23, 0, 87];
+// const array2 = [1, 1, 2, 3, 4, 5];
+// const array3 = [0];
+// const array4 = ['never gonna', 'give you', 'up'];
+// const array5 = ['never gonna', 'let you', 'down'];
+
+
+
+// function verifSortAsc(tableau) {
+    // let estTrier = true; // par defaut on considere que le tableau est trie
+    // let tab = []; // declare un tableau vide pour avoir une copy du tableau
+    // for (let i = 0; i < tableau.length; i++){ //
+        // remplir le tableau tab par les valeur du tableau tableau
+        // tab.push(tableau[i]);
+    // }
+    // tab.sort(); // trier tab
+
+
+
+    // for (let i = 0; i < tab.length; i++){ // pour i allant de 0 a taille du tableau
+        // if (tab[i] == tableau[i]) { // si tab[i] == tableau[i]
+            // estTrier = true;
+        // } else { // sinon
+            // estTrier = false;
+            // break; // on sort de la boucle
+        // }
+    // }
+    // return estTrier;
+// }
+
+// console.log(verifSortAsc(array5)); // =>
+
+
+// function reverseWord(str) {
+  // let tab = str.split(""); // conversion de la chaine de caractere en tableau
+  // tab.reverse(); // inverser le tableau
+  // let chaine = tab.join(""); // convertir le tableau en chaine de caractere
+  // return chaine;
+  // return str.split('').reverse().join('');
+// }
+
+// console.log(reverseWord("Hello World!"));
+
+
+/* P R O G R A M M A T I O N           O B J E T */
+
+
+/* --- Instancer ---
+instancier = créer un objet
+*/
+
+// class Personne {
+  // on appelle la fonction "constructor" avec 2 paramétres : "n" et "a"
+  // constructor(n, a) {
+    // this.nom = n; // on déclare une variable "nom" qui prend la valeur de "n"
+    // this.age = a; // on déclare une variable "age" qui prend la valeur de "a"
+  // }
+
+  // saluer() { // la méthode "saluer" permet d'afficher la phrase : "Bonjour, je m'appelle (nom de l'objet) et j'ai (l'age de l'objet) ans"
+    // console.log("Bonjour, je m'appelle " + this.nom + " et j'ai " + this.age + " ans.");
+  // }
+// }
+
+// création des objets "p1" et "p2"
+// let p1 = new Personne("Kira", 20); // "p1" s'appelle "Kira" et a 20 ans
+// p1.age;
+// pour récuperer l'age de "p1" faire la syntaxe : "p1.age"
+// p1.nom;
+// pour récuperer le nom de "p1" faire la syntaxe : "p1.nom"
+// p1.saluer();
+// pour appeller la méthode "saluer" sur un des objets faire : "p1.saluer();"
+
+// let p2 = new Personne("Kenzo", 15); // "p2" s'appelle "Kenzo" et a 15 ans
+// p2.age;
+// pour récuperer l'age de "p2" faire la syntaxe : "p2.age"
+// p2.nom;
+// pour récuperer le nom de "p2" faire la syntaxe : "p2.nom"
+// p2.saluer();
+// pour appeller la méthode "saluer" sur un des objets faire : "p2.saluer();"
+
+
+/* --- Exercice --- */
+
+/*
+Supposons que vous deviez modéliser une classe "Cercle" qui représente un cercle avec
+la propriété "rayon" et les méthodes "calculerSurface();" qui calcule et retourne la
+surface du cercle et "afficherInfo();" qui affiche les informations du cercle dans la
+console.
+
+Votre tache consiste à créer la classe "Cercle", instancer un objet "Cercle" et
+appeler les méthodes calculerSurface(); et afficherInfo(); pour l'objet instancié.
+
+Formule pour calculer la surface d'un cercle : PI multiplié par le rayon au caré PI
+* (rayon * rayon)
+*/
+
+// class Cercle {
+  // on déclare le "constructeur" de la classe qui prend un paramétre qui est "rayon"
+//   constructor(rayon) {
+//     this.rayon = rayon;
+//   }
+  // déclarer la méthode "calculerSurface"
+//   calculerSurface() {
+    // calculer la surface
+//     let surface = Math.PI * Math.pow(this.rayon, 2);
+//     return surface;
+//   }
+  // déclarer la méthode "afficherInfo"
+//   afficherInfo() {
+    // afficher les informations du cercle
+//     console.log("Rayon du cercle : " + this.rayon);
+//     console.log("Surface du cercle : " + this.calculerSurface());
+    // "this.calculerSurface()" retourne la valeur "surface"
+
+    // console.log("Surface du cercle : " + Math.ceil(this.calculerSurface()));
+    // Math.ceil pour arrondir
+//   }
+// }
+// let cercle = new Cercle(2); // instancier un objet "Cercle"
+// cercle.afficherInfo();
+
+
+/*
+--- Exercice n°2 ---
+Supposons que vous deviez modéliser une classe "CompteBancaire" qui représente un
+compte bancaire avec les propriétés suivantes : "titulaire", "solde" et les méthodes
+"déposer(montant)" qui permet de déposer de l'argent sur le compte,
+"retirer(montant)"qui permet de retirer de l'argent du compte et
+"afficherSolde()" qui affiche le solde
+actuel du compte.
+
+Votre tache consiste à créer la classe "CompteBancaire",
+créer le "constructeur" avec les paramétres : "titulaire" et "solde"
+créer les méthodes :
+"deposer" : qui prend un paramétre pour ajouter de l'argent dans le compte
+"retirer" : qui prend un paramétre pour retirer de l'argent du compte
+"afficherSolde" : qui affiche le soldle du compte dans la console
+
+Instancier un objet "CompteBancaire" avec comme titulaire : Kira et solde 5
+appeller la méthode "ajouter" en lui passant la valeur 10
+appeller la méthode "retirer" en lui passant la valeur 7
+appeller la méthode "afficherSolde"
+*/
+
+// class CompteBancaire {
+//   constructor(titulaire, solde) { // le "consructeur" prend 2 param: le titulaire => "titulaire" et "solde" => solde
+//     this.titulaire = titulaire;
+//     this.solde = solde;
+//   }
+  // déclarer les méthode "deposer", "retirer" et "afficherSolde"
+//   deposer(montant) { // déposer prend un param : "montant"
+//     let moreMoney = this.solde += montant;
+//   }
+//   retirer(montant) { // retirer prend un param : "montant"
+//     let lessMoney = this.solde -= montant;
+//   }
+//   afficherSolde() {
+//     console.log(this.solde + " €");
+//   }
+// }
+// instancier un objet "CompteBancaire"
+// let titulaire1 = new CompteBancaire("Kira", 5);
+// titulaire1.afficherSolde();
+
+// titulaire1.deposer(500);
+// titulaire1.afficherSolde();
+// titulaire1.retirer(20);
+// titulaire1.afficherSolde();
+
+
+
+/* F O N C T I O N S     A N O N Y M E S */
+
+// ici on utilise une fonction traditionnelle
+// function rappel() {
+  // console.log("Ceci est une fonction de rappel");
+// }
+// setTimeout(rappel(), 2000);
+
+// ici on utilise une fonction anonyme
+// setTimeout(function () {
+  // console.log("Ceci est une fonction de rappel");
+// }, 2000);
+
+
+
+/* F O N C T I O N S     F L E C H E E S */
+
+// Fonction traditionnelle
+// function addition(a, b) {
+  // return a + b;
+// }
+
+// Fonction fléchée équivalente
+// const additionFlechee = (a, b) => a + b;
+
+
+
+/* M A N I P U L A T I O N      D U         D O M */
+
