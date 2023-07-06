@@ -715,3 +715,15 @@ appeller la méthode "afficherSolde"
 
 /* M A N I P U L A T I O N      D U         D O M */
 
+
+/**
+* * this is light green
+* ! this is red
+* ? this is blue
+* TODO this is orange
+*/
+
+//* this is light green
+//! this is red
+//? this is  blue
+//TODO this is orange

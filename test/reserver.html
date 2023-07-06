@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="reserver.js" defer></script>
+    <link rel="stylesheet" href="reserver.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>FORMULAIRE DE RESERVATION</h1>
+      <form id="reservationForm">
+        <div class="noprix">
+          <div class="noms">
+            <input type="text" id="nom" name="nom" placeholder="NOM" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="EMAIL"
+              required
+            />
+            <input
+              type="tel"
+              id="tel"
+              name="tel"
+              placeholder="TELEPHONE :"
+              required
+            />
+          </div>
+
+          <div class="prix">
+            <input type="text" id="prixHT" placeholder="TOTAL HT :" />
+            <input type="text" id="prixTTC" placeholder="TOTAL TTC :" />
+            <input type="text" id="total" placeholder="TOTAL :" />
+          </div>
+        </div>
+        <div class="menus">
+          <select name="menu" id="menu">
+            <option value="choisir">Choisir un plat:</option>
+            <option value="thiebou dieune">Shiebou dieune</option>
+            <option value="salade de quinoa">Salade de quinoa</option>
+            <option value="sushi burger">Sushi burger</option>
+            <option value="filets de poulet panes">
+              Filets de poulet panes
+            </option>
+          </select>
+
+          <select name="desert" id="dessert">
+            <option value="choisir_des">Choisir un dessert:</option>
+            <option value="churros maison">Churros maison</option>
+            <option value="biscuits au pepites">Biscuits au pepites</option>
+            <option value="buche de noel">Buche de noel</option>
+            <option value="gateau au fromage">Gateau au fromage</option>
+          </select>
+        </div>
+
+        <div class="concheck">
+          <label for="conditions" class="bigcheck"
+            >J'accepte les conditions générales</label
+          >
+          <input class="checkbox" type="checkbox" id="conditions" required />
+          <span class="custom-checkbox"></span>
+        </div>
+
+        <button type="submit" class="valider" id="submitBtn">
+          VALIDER MA COMMANDE
+        </button>
+        <div id="result"></div>
+      </form>
+    </div>
+  </body>
+</html>

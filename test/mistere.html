@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <script src="mistere.js" defer></script>
+    <link rel="stylesheet" href="mistere.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="regle">
+      <div>
+        <h1>Trouvez le nombre mystère!</h1>
+        <i class="fa-duotone fa-user-secret"></i>
+        <p>
+          Regle du jeu  <br />
+          Vous avez 7 essais pour trouver le nombre. <br />
+          Bon courage!
+        </p>
+      </div>
+      <div class="proposition">
+        <button id="newGame">Nouveau jeu</button>
+        <button id="solution">Solution</button>
+        <button id="propose">Proposer</button>
+      </div>
+      <form id="monForm">
+        <fieldset>
+          <div class="ligne">
+            <label for="proposition">Proposition :</label>
+            <input type="text" id="proposition" />
+          </div>
+
+          <div class="ligne">
+            <label for="essai">N°essai</label>
+            <input type="text" id="essai" disabled />
+          </div>
+
+          <div class="ligne">
+            <label for="message">Message:</label>
+            <input type="text" id="message" disabled />
+          </div>
+
+          <div class="ligne">
+            <label for="reponse">Reponse:</label>
+            <input type="text" id="reponse" disabled />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
